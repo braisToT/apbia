@@ -1,4 +1,4 @@
-#' Export a report from a given workspace
+#' Export a report from a given workspace to our local storage
 #'
 #' @param wsId Workspace target Id
 #' @param name The name of the .pbix which you want to import
