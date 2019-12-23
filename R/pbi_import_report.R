@@ -15,7 +15,7 @@ pbi_import_report <- function(wsId, name, key){
 
   url <- "https://api.powerbi.com/v1.0/myorg/"
 
-  endpoint <- paste(url,"groups/",wsId,"/imports?datasetDisplayName=",name,".pbix", sep = "")
+  endpoint <- paste(url,"groups/",wsId,"/imports?datasetDisplayName=",name,".pbix&nameConflict=Overwrite", sep = "")
 
   httr::POST(endpoint,
              httr::add_headers(Authorization = paste("Bearer",AzureAuth::extract_jwt(key), sep = " ")),
