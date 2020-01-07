@@ -2,7 +2,7 @@
 % Please edit documentation in R/pbi_import_report.R
 \name{pbi_import_report}
 \alias{pbi_import_report}
-\title{Export a report from a given workspace}
+\title{Export a report from a given workspace to our local storage}
 \usage{
 pbi_import_report(wsId, name, key)
 }
@@ -17,5 +17,5 @@ pbi_import_report(wsId, name, key)
 HTTP code to know the good/bad state of the POST request
 }
 \description{
-Export a report from a given workspace
+Export a report from a given workspace to our local storage
 }
